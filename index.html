@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HPC Matrix Demo</title>
+  <title>HPC Demo</title>
 </head>
 <body>
-  <h1>🚀 HPC Matrix Multiplication</h1>
+  <h1>🚀 Matrix Multiplication (HPC Demo)</h1>
 
-  <input id="size" type="number" value="200"/>
+  <input id="size" type="number" value="100"/>
   <button onclick="run()">Run</button>
 
   <p id="result"></p>
@@ -14,7 +14,6 @@
   <script>
     async function run() {
       const n = document.getElementById("size").value;
-
       const res = await fetch(`/api/multiply?n=${n}`);
       const data = await res.json();
 
